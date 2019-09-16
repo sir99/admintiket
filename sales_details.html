@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sales Details - TiketSaya</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Login TiketSaya Admin">
+        <meta name="keywords" content="TiketSaya, Web Dashboard TiketSaya, Login TiketSaya">
+        <meta name="author" content="Uncle Sir">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    </head>
+    <body>
+        
+        <div class="side-left">
+            <div class="shortcut" onmouseover="showAdminProfile()">
+                <div class="emblemapp">
+                    <img src="images/emblem_app.png" height="29" alt="">
+                </div>
+                <div class="menus">
+                    
+                    <div class="item-menu inactive">
+                        <a href="dashboard.html">
+                            <p class="icon-item-menu">
+                                <i class="fab fa-delicious"></i>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="item-menu">
+                        <a href="sales.html">
+                            <p class="icon-item-menu">
+                                <i class="fas fa-ticket-alt"></i>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="item-menu inactive">
+                        <a href="wisata.html">
+                            <p class="icon-item-menu">
+                                <i class="fas fa-globe"></i>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="item-menu inactive">
+                        <a href="customer.html">
+                            <p class="icon-item-menu">
+                                <i class="fas fa-users"></i>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="item-menu inactive">
+                        <a href="setting.html">
+                            <p class="icon-item-menu">
+                                <i class="fas fa-cog"></i>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="item-menu inactive">
+                        <a href="#">
+                            <p class="icon-item-menu">
+                                <i class="fas fa-power-off"></i>
+                            </p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="admin-profile" id="sl_ap" onmouseover="showAdminProfile()" onmouseout="hideAdminProfile()">
+                <div class="admin-picture">
+                    <img src="images/1.jpg" alt="">
+                </div>
+                <p class="admin-name">
+                    Uncle Sir
+                </p>
+                <p class="admin-level">
+                    Super Admin
+                </p>
+                <ul class="admin-menus">
+                    <a href="dashboard.html">
+                        <li>My Dashboard</li>
+                    </a>
+                    <a href="sales.html">
+                        <li class="active-link">Ticket Sales</li>
+                    </a>
+                    <a href="wisata.html">
+                        <li>Manage Wisata</li>
+                    </a>
+                    <a href="customer.html">
+                        <li>Customers<span class="badge-tiketsaya badge badge-pill badge-primary">96</span></li>
+                    </a>
+                    <a href="setting.html">
+                        <li>Account Settings</li>
+                    </a>
+                    <a href="#">
+                        <li style="margin-top: 170px">Log Out</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="row header">
+                <div class="col-md-12">
+                    <p class="header-title">
+                        Details
+                    </p>
+                    <nav aria-label="breadcrumb sitemap-ts">
+                        <ol class="breadcrumb" style="background: none; margin-left: -15px;">
+                            <li class="breadcrumb-item"><a style="color: #c7c7c7;" href="sales.html">Sales</a></li>
+                            <li style="color: #21272c;" class="breadcrumb-item active" aria-current="page">Ichi</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row report-group">
+                
+                <div class="col-md-12">
+                    <div class="col-md-12 item-big-report">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="wrap-user-picture-circle">
+                                    <img class="primary-user-picture-circle" src="images/1.jpg" alt="">
+                                </div>
+                                <div class="user-info">
+                                    <p class="user-title">
+                                        Ichi<br>
+                                        <span class="user-subtitle">Traveler</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="total-balance">
+                                    Total Balance: <span class="value-balance">US$ 109</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row user-wisata-places">
+                            <div class="col-md-12">
+                                <p class="user-title">
+                                    Ichi's Wisata
+                                </p>
+                            </div>
+
+                            <div class="col-md-4 item-wisata-place">
+                                <img src="images/monas.jpg" alt="">
+                                <p class="title-info-wisata-place">Monas</p>
+                                <p class="subtitle-info-wisata-place">Jakarta, Indonesia</p>
+                            </div>
+
+                            <div class="col-md-4 item-wisata-place">
+                                <img src="images/monas.jpg" alt="">
+                                <p class="title-info-wisata-place">Monas</p>
+                                <p class="subtitle-info-wisata-place">Jakarta, Indonesia</p>
+                            </div>
+
+                            <div class="col-md-4 item-wisata-place">
+                                <img src="images/monas.jpg" alt="">
+                                <p class="title-info-wisata-place">Monas</p>
+                                <p class="subtitle-info-wisata-place">Jakarta, Indonesia</p>
+                            </div>
+
+                            <div class="col-md-4 item-wisata-place">
+                                <img src="images/monas.jpg" alt="">
+                                <p class="title-info-wisata-place">Monas</p>
+                                <p class="subtitle-info-wisata-place">Jakarta, Indonesia</p>
+                            </div>
+
+                            <div class="col-md-4 item-wisata-place">
+                                <img src="images/monas.jpg" alt="">
+                                <p class="title-info-wisata-place">Monas</p>
+                                <p class="subtitle-info-wisata-place">Jakarta, Indonesia</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+    </body>
+</html>
